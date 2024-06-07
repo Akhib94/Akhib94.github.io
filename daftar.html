@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga LCD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Harga LCD</h1>
+        <form id="lcdForm">
+            <label for="phoneBrand">Merek HP:</label>
+            <select id="phoneBrand" name="phoneBrand" required>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+
+            <label for="phoneType">Tipe HP:</label>
+            <input type="text" id="phoneType" name="phoneType" required>
+
+            <label for="lcdBrand">Merek LCD:</label>
+            <input type="text" id="lcdBrand" name="lcdBrand" required>
+
+            <label for="lcdPrice">Harga LCD:</label>
+            <input type="number" id="lcdPrice" name="lcdPrice" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Daftar Harga Pembelian LCD</h2>
+        <input type="text" id="search" placeholder="Cari...">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Merek HP</th>
+                    <th>Tipe HP</th>
+                    <th>Merek LCD</th>
+                    <th>Harga LCD</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated by JavaScript -->
+            </tbody>
+        </table>
+
+        <h2>Daftar Harga User</h2>
+        <button onclick="printTableDoubled()">Print Tabel</button>
+        <table id="dataTableDoubled">
+            <thead>
+                <tr>
+                    <th>Merek HP</th>
+                    <th>Tipe HP</th>
+                    <th>Merek LCD</th>
+                    <th>Harga LCD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
